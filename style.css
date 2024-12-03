@@ -1,0 +1,188 @@
+body{
+    background-color: rgb(255, 234, 2);
+    width: auto;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(85, 37, 227);
+    width: 100%;
+    height: 70px;
+}
+
+.homeh{
+    width: 3%;
+    height: auto;
+}
+
+.home2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+} 
+
+.home2 h2{
+    width: 350px;
+    height: 35px;
+    background-color: rgb(85, 37, 227);
+    color: white;
+    text-align: center;
+}
+
+.home21{
+    margin:5px
+}
+
+.home21 h2{
+    width: 350px;
+    height: 35px;
+    background-color: rgb(85, 37, 227);
+    color: white;
+    text-align: center;
+} 
+
+
+.hom3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+}
+
+.hom3 h2{
+    width: 350px;
+    height: 85px;
+    background-color: rgb(85, 37, 227);
+    color: white;
+    text-align: center;
+}
+
+.image_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.image{
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+
+.tour_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.image2{
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+}
+
+.image3{
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.home1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+}
+
+.home1 h1{
+    width: 280px; 
+    height: 155px;
+    background-color: rgb(85, 37, 227);
+    color: white;
+    text-align: center;
+}
+
+.homeff{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(85, 37, 227);
+    width: 100%;
+    height: 70px;
+   
+}
+
+.homef{
+    width: 10%;
+    height: auto;
+    text-align: center;
+
+}
+
+p{
+    background-color: rgb(85, 37, 227);
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .image_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .image, .image2, .image3 {
+        border-right: none; /* Remove border between stacked items */
+        border-bottom: 2px solid rgb(85, 37, 227); /* Add a horizontal divider */
+      }
+    .home1, .hom3{
+        width: 100%;
+    } 
+    .home2, .home21{
+        width: 90%; /* Adjust link width for better spacing */
+        margin: 5px auto; /* Center the links */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home1, .home2, .home21, .hom3 {
+        font-size: 1.5rem;
+        padding:10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .image_container{
+        margin: 20px auto;
+    }
+    .home2, .home21{
+        padding: 10px;
+    }   
+    .image, .image2, .image3 {
+        margin: 10px;
+        padding: 10px;
+      }
+}
